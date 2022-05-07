@@ -15,7 +15,7 @@
 body {
     display: flex;
     justify-content: center;
-    margin-top: 120px;
+    margin-top: 50px;
     font-family: 'Montserrat', sans-serif;
     background-color: var(--light);
 }
@@ -129,6 +129,12 @@ h1 {
     color: var(--light-dark);
     text-decoration: line-through;
 }
+.accept {
+    overflow: hidden;
+}
+.cancel {
+    overflow: hidden
+}
 
 .popup {
     display: none;
@@ -139,11 +145,12 @@ h1 {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 800px;
+    width: 100vw;
     color: var(--light);
     background-color: var(--light-dark);
     border-radius: 5px;
 }
+
 
 .popup h3 {
     padding: 20px;
@@ -189,5 +196,17 @@ h1 {
     color: #fff;
     background-color: var(--light-blue);
 }
-
+@media (min-width: 800px){
+    body {
+        margin-top: 120px;
+    }
+    .popup{
+        width: 800px;
+    }
+}
+@media (max-width:562px){
+    .btn-add{
+        margin-top: 20px;
+    }
+}
 

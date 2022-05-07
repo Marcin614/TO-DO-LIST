@@ -79,7 +79,7 @@ const newValueInputPop=()=>{
         LI.firstChild.textContent=inputPop.value
         pop.style.display='none'
         error.textContent='Zmiany zostały zapisane'
-        setTimeout(text,3000)
+        setTimeout(text,2000)
     }
     else{
         popInfo.textContent="Wpisz treść zadania!"
